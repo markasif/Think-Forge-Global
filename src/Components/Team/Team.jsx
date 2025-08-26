@@ -6,7 +6,9 @@ import shafas from "../Assets/shafas.webp";
 import afnan from "../Assets/afnan (2).webp";
 import praveen from "../Assets/praveen.webp";
 import goutham from "../Assets/goutham.webp";
-// import nijith from "../Assets/nijith.webp";
+import nijith from "../Assets/nijith.webp";
+import shiju from "../Assets/shiju.webp";
+
 
 const teamMembers = [
   {
@@ -21,18 +23,25 @@ const teamMembers = [
     image: shafas,
     linkedin: "https://www.linkedin.com/in/mohammed-shafas/",
   },
+   {
+    name: "Nijith Nirmal ",
+    title: "UX Strategist & Product Designer",
+    image: nijith,
+    linkedin: "https://www.linkedin.com/in/nijith-nirmal-b90044175/",
+  },
+   {
+    name: "Shiju U K",
+    title: "Junior Full Stack Developer",
+    image: shiju,
+    linkedin: "",
+  },
   {
     name: "Goutham",
     title: "UI/UX Designer",
     image: goutham,
     linkedin: "https://www.linkedin.com/in/goutham-sreeram-sb-2b7661241/",
   },
-  // {
-  //   name: "Nijith Nirmal ",
-  //   title: "UX Strategist & Product Designer",
-  //   image: nijith,
-  //   linkedin: "https://www.linkedin.com/in/nijith-nirmal-b90044175/",
-  // },
+ 
   {
     name: "Afnan",
     title: "Full Stack Developer",
@@ -90,7 +99,7 @@ export default function Team() {
           ))}
 
           {/* Apply Now Card */}
-          <div className="bg-white w-[260px] h-80 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center p-6">
+          <div className="bg-white w-[260px]  rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center p-6">
             <h3 className="text-lg font-semibold mb-2">Think You Belong Here?</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
