@@ -42,7 +42,7 @@ export default function Footer() {
               <span>Our Location</span>
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Ayisha Complex, Perinthalmanna, Kerala 679322
+              Second Floor, Ayisha Complex, Perinthalmanna, Kerala, 679322
             </p>
           </div>
           <div className="space-y-6">
@@ -93,7 +93,7 @@ export default function Footer() {
   <iframe
     title="Google Map"
     className="w-full h-full min-h-[200px]"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8257546360064!2d76.21957730000001!3d10.9765213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cc569e783475%3A0x4a7f9197c63d8c44!2sAyisha%20Complex%2C%20NH%20213%2C%20Perinthalmanna%2C%20Kerala%20679322!5e0!3m2!1sen!2sin!4v1755796381407!5m2!1sen!2sin" ></iframe>"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8256849533304!2d76.21700237326722!3d10.976526555474559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cc569e783475%3A0x4a7f9197c63d8c44!2sAyisha%20Complex%2C%20NH%20213%2C%20Perinthalmanna%2C%20Kerala%20679322!5e0!3m2!1sen!2sin!4v1756221434153!5m2!1sen!2sin"></iframe>"
     
 </div>
 
