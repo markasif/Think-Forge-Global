@@ -8,12 +8,18 @@ import praveen from "../Assets/praveen.webp";
 import goutham from "../Assets/goutham.webp";
 import nijith from "../Assets/nijith.webp";
 import shiju from "../Assets/shiju.webp";
+import ann from "../Assets/Ann.webp";
+import asif from "../Assets/asif.webp";
+import jilsina from "../Assets/jilsina.webp";
+import ullas from "../Assets/ullas.webp";
+import sadasivan from "../Assets/sadasivan.webp";
 
+ 
 
 const teamMembers = [
   {
-    name: "CA Praveen",
-    title: "Director / CEO",
+    name: "CA Praveen P K",
+    title: "CEO",
     image: praveen,
     linkedin: "https://www.linkedin.com/in/ca-praveen-p-k-96553b10a/",
   },
@@ -23,30 +29,61 @@ const teamMembers = [
     image: shafas,
     linkedin: "https://www.linkedin.com/in/mohammed-shafas/",
   },
-   {
+  {
     name: "Nijith Nirmal ",
-    title: "UX Strategist & Product Designer",
+    title: "Senior Product Designer",
     image: nijith,
     linkedin: "https://www.linkedin.com/in/nijith-nirmal-b90044175/",
   },
+  {
+    name: "Ullas Raj",
+    title: "Senior Developer",
+    image: ullas,
+    linkedin: "linkedin.com/in/ullas-raj-4a5808169",
+  },
+  {
+    name: "Sadasivan K S ",
+    title: "UX Strategist & Product Designer",
+    image: sadasivan,
+    linkedin: "linkedin.com/in/sadasivan-ks",
+  },
+   
    {
     name: "Shiju U K",
     title: "Junior Full Stack Developer",
     image: shiju,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/shiju-uk-1a320620a",
   },
   {
-    name: "Goutham",
+    name: "Goutham Sreeram",
     title: "UI/UX Designer",
     image: goutham,
     linkedin: "https://www.linkedin.com/in/goutham-sreeram-sb-2b7661241/",
   },
  
   {
-    name: "Afnan",
+    name: "Afnan Mohammed",
     title: "Full Stack Developer",
     image: afnan,
     linkedin: "https://www.linkedin.com/in/afnan-mohammed-094268224/",
+  },
+  {
+    name: "Annmariya Wilson",
+    title: "Software Developer Trainee",
+    image: ann,
+    linkedin: "https://www.linkedin.com/in/annmariya-wilson/",
+  },
+  {
+    name: "Jilsina Parveen",
+    title: "Software Developer Trainee",
+    image: jilsina,
+    linkedin: "https://www.linkedin.com/in/jilsina-parveen-k-v-368304315",
+  },
+  {
+    name: "Mohammed Asif",
+    title: "Software Developer Trainee",
+    image: asif,
+    linkedin: "http://linkedin.com/in/asifap",
   },
 ];
 
