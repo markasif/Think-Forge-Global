@@ -69,17 +69,18 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/afnan-mohammed-094268224/",
   },
   {
-    name: "Annmariya Wilson",
-    title: "Software Developer Trainee",
-    image: ann,
-    linkedin: "https://www.linkedin.com/in/annmariya-wilson/",
-  },
-  {
     name: "Jilsina Parveen",
     title: "Software Developer Trainee",
     image: jilsina,
     linkedin: "https://www.linkedin.com/in/jilsina-parveen-k-v-368304315",
   },
+  {
+    name: "Annmariya Wilson",
+    title: "Software Developer Trainee",
+    image: ann,
+    linkedin: "https://www.linkedin.com/in/annmariya-wilson/",
+  },
+ 
   {
     name: "Mohammed Asif",
     title: "Software Developer Trainee",
