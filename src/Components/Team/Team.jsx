@@ -13,6 +13,8 @@ import asif from "../Assets/asif.webp";
 import jilsina from "../Assets/jilsina.webp";
 import ullas from "../Assets/ullas.webp";
 import sadasivan from "../Assets/sadasivan.webp";
+import midhun from "../Assets/midhun.webp";
+
 
  
 
@@ -60,6 +62,12 @@ const teamMembers = [
     title: "UI/UX Designer",
     image: goutham,
     linkedin: "https://www.linkedin.com/in/goutham-sreeram-sb-2b7661241/",
+  },
+  {
+    name: "Midhun S Paratharayil",
+    title: "Quality Analyst",
+    image: midhun,
+    linkedin: "https://www.linkedin.com/in/midhunsparatharayil",
   },
  
   {
