@@ -14,6 +14,7 @@ import jilsina from "../Assets/jilsina.webp";
 import ullas from "../Assets/ullas.webp";
 import sadasivan from "../Assets/sadasivan.webp";
 import midhun from "../Assets/midhun.webp";
+import farsin from "../Assets/farsin.webp";
 
 
  
@@ -69,12 +70,18 @@ const teamMembers = [
     image: midhun,
     linkedin: "https://www.linkedin.com/in/midhunsparatharayil",
   },
- 
+  
   {
     name: "Afnan Mohammed",
     title: "Full Stack Developer",
     image: afnan,
     linkedin: "https://www.linkedin.com/in/afnan-mohammed-094268224/",
+  },
+  {
+    name: "Farsin Jabbar",
+    title: "Junior Quality Analyst",
+    image: farsin,
+    linkedin: "http://linkedin.com/in/farsin-jabbar-994206313",
   },
   {
     name: "Jilsina Parveen",
