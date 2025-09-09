@@ -77,12 +77,7 @@ const teamMembers = [
     image: afnan,
     linkedin: "https://www.linkedin.com/in/afnan-mohammed-094268224/",
   },
-  {
-    name: "Farsin Jabbar",
-    title: "Junior Quality Analyst",
-    image: farsin,
-    linkedin: "http://linkedin.com/in/farsin-jabbar-994206313",
-  },
+  
   {
     name: "Jilsina Parveen",
     title: "Software Developer Trainee",
@@ -101,6 +96,12 @@ const teamMembers = [
     title: "Software Developer Trainee",
     image: asif,
     linkedin: "https://www.linkedin.com/in/asifap",
+  },
+  {
+    name: "Farsin Jabbar",
+    title: "Junior Quality Analyst",
+    image: farsin,
+    linkedin: "http://linkedin.com/in/farsin-jabbar-994206313",
   },
 ];
 
