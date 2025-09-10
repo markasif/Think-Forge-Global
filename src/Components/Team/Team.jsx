@@ -105,7 +105,7 @@ const teamMembers = [
     linkedin: "http://linkedin.com/in/farsin-jabbar-994206313",
   },
   {
-    name: "shaimah",
+    name: "Shaimah",
     title: "Junior Ui/Ux Designer",
     image: shaimah,
     linkedin: "https://www.linkedin.com/in/fathimathu-shaimah",
