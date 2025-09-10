@@ -15,6 +15,7 @@ import ullas from "../Assets/ullas.webp";
 import sadasivan from "../Assets/sadasivan.webp";
 import midhun from "../Assets/midhun.webp";
 import farsin from "../Assets/farsin.webp";
+import shaimah from "../Assets/shaimah.webp";
 
 
  
@@ -102,6 +103,12 @@ const teamMembers = [
     title: "Junior Quality Analyst",
     image: farsin,
     linkedin: "http://linkedin.com/in/farsin-jabbar-994206313",
+  },
+  {
+    name: "shaimah",
+    title: "Junior Ui/Ux Designer",
+    image: shaimah,
+    linkedin: "https://www.linkedin.com/in/fathimathu-shaimah",
   },
 ];
 
