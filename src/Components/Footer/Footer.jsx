@@ -25,9 +25,8 @@ export default function Footer() {
   const footerLinks = [
     { name: "About", url: "#about" },
     { name: "Services", url: "#services" },
-     { name: "Our Team", url: "#team" },
+    { name: "Our Team", url: "#team" },
     { name: "Connect", url: "#connect" },
-   
   ];
 
   return (
@@ -42,7 +41,7 @@ export default function Footer() {
               <span>Our Location</span>
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Second Floor, Ayisha Complex, Perinthalmanna, Kerala, 679322
+              Second Floor, Ayisha Complex, Perinthalmanna, Kerala, India 679322
             </p>
           </div>
           <div className="space-y-6">
@@ -89,27 +88,26 @@ export default function Footer() {
           </div>
 
           {/* Map */}
-<div className="rounded-xl overflow-hidden border-gray-200">
-  <iframe
-    title="Google Map"
-    className="w-full h-full min-h-[200px]"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8256849533304!2d76.21700237326722!3d10.976526555474559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cc569e783475%3A0x4a7f9197c63d8c44!2sAyisha%20Complex%2C%20NH%20213%2C%20Perinthalmanna%2C%20Kerala%20679322!5e0!3m2!1sen!2sin!4v1756221434153!5m2!1sen!2sin"></iframe>"
-    
-</div>
-
+          <div className="rounded-xl overflow-hidden border-gray-200">
+            <iframe
+              title="Google Map"
+              className="w-full h-full min-h-[200px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.80144487937253!2d76.21926463627273!3d10.976720148350356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd5a48d332c9%3A0x53c4e6fc539a98d!2sThink%20Forge%20Global%20LLP!5e0!3m2!1sen!2sin!4v1759155248199!5m2!1sen!2sin"
+            ></iframe>
+            "
+          </div>
 
           {/* Contact Info + Social Icons */}
-          
 
           {/* Logo */}
-          
+
           <div className="flex justify-center md:justify-end items-center">
             <a href="#hero">
-            <img
-              src={logo}
-              alt="Think Forge Global"
-              className="w-36 md:w-40 opacity-90 hover:opacity-100 transition-opacity"
-            />
+              <img
+                src={logo}
+                alt="Think Forge Global"
+                className="w-36 md:w-40 opacity-90 hover:opacity-100 transition-opacity"
+              />
             </a>
           </div>
         </div>
@@ -132,7 +130,8 @@ export default function Footer() {
           </div>
 
           <div className="text-gray-500 text-sm text-center md:text-right">
-            © {new Date().getFullYear()} Think Forge Global. All Rights Reserved.
+            © {new Date().getFullYear()} Think Forge Global. All Rights
+            Reserved.
           </div>
         </div>
       </div>
