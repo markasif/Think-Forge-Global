@@ -94,9 +94,7 @@ export default function Footer() {
               className="w-full h-full min-h-[200px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.80144487937253!2d76.21926463627273!3d10.976720148350356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd5a48d332c9%3A0x53c4e6fc539a98d!2sThink%20Forge%20Global%20LLP!5e0!3m2!1sen!2sin!4v1759155248199!5m2!1sen!2sin"
             ></iframe>
-            "
           </div>
-
           {/* Contact Info + Social Icons */}
 
           {/* Logo */}
