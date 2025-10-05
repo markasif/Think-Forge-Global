@@ -13,5 +13,13 @@
 }
 
 body {
-  font-family: 'Sh Ad Grotesk', sans-serif;
+  font-family: 'Sh Ad Grotesk', sans-serif, 'Inter';
+}
+
+@font-face {
+  font-family: 'Awesome Serif';
+  src: url('/fonts/AwesomeSerif-Italic-VAR.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }

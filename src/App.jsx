@@ -8,6 +8,9 @@ import Team from './Components/Team/Team';
 import Footer from './Components/Footer/Footer';
 import ConnectSection from './Components/Connect/Connect';
 import Loader from './Components/Loader/Loader';
+import { Routes,Route } from 'react-router-dom';
+import HomePage from './pages/HomePages';
+import CareersPage from './pages/CareersPage';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -23,24 +26,17 @@ function App() {
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
+  if (loading) {
+    return <Loader/>;
+  }
+
   return (
     <div className="font-sans">
-      {loading && <Loader />}
-
-      {!loading && (
-        <>
           <Navbar />
-          <Hero />
-          <About />
-          <OurServices />
-          {/* <Testimonials /> */}
-          <Team />
-          <ConnectSection />
-          {/* <Works/> */}
-          <Footer />
-
-        </>
-      )}
+          <Routes>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/careers" element = {<CareersPage/>} />
+          </Routes>
     </div>
   );
 }

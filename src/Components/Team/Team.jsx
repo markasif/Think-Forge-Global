@@ -23,13 +23,13 @@ import shaimah from "../Assets/shaimah.webp";
 const teamMembers = [
   {
     name: "CA Praveen P K",
-    title: "CEO",
+    title: "Chief Executive Officer",
     image: praveen,
     linkedin: "https://www.linkedin.com/in/ca-praveen-p-k-96553b10a/",
   },
   {
     name: "Mohammed Shafas",
-    title: "Associate",
+    title: "Business And Operations Manager",
     image: shafas,
     linkedin: "https://www.linkedin.com/in/mohammed-shafas/",
   },
