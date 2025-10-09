@@ -1,13 +1,52 @@
-import React from 'react';
-import InteractiveGridPattern from '../IntractiveGrid/IntractiveGrid';
+import React from "react";
+import InteractiveGridPattern from "../IntractiveGrid/IntractiveGrid";
+
+// const jobPositions = [
+//   { id: 1, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+//   { id: 2, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+//   { id: 3, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+//   { id: 4, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+//   { id: 5, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+//   { id: 6, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+// ];
 
 const jobPositions = [
-  { id: 1, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-  { id: 2, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-  { id: 3, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-  { id: 4, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-  { id: 5, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-  { id: 6, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
+  {
+    id: "sr-product-designer-01",
+    title: "Senior Product Designer",
+    type: "Remote",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
+  {
+    id: "fe-dev-01",
+    title: "Front End Developer",
+    type: "Full Time",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
+  {
+    id: "ux-researcher-01",
+    title: "Graphic Designer",
+    type: "Remote",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
+  {
+    id: "jr-graphic-designer-01",
+    title: "Junior Graphic Designer",
+    type: "Full Time",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
+  {
+    id: "sr-backend-eng-01",
+    title: "Senior Backend Engineer",
+    type: "Remote",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
+  {
+    id: "project-manager-01",
+    title: "Project Manager",
+    type: "Full Time",
+    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+  },
 ];
 
 export default function OpenPositions() {
@@ -20,11 +59,11 @@ export default function OpenPositions() {
         squares={[80, 80]}
       />
       <InteractiveGridPattern
-                className="absolute inset-0 text-gray-300 z-10 pointer-events-auto"
-                width={60}
-                height={60}
-                squares={[80, 80]}
-              />
+        className="absolute inset-0 text-gray-300 z-10 pointer-events-auto"
+        width={60}
+        height={60}
+        squares={[80, 80]}
+      />
       <div className="relative z-10 max-w-7xl mx-auto">
         <h2 className="text-center text-4xl sm:text-5xl font-bold font-sans mb-14">
           Open Positions
@@ -36,15 +75,26 @@ export default function OpenPositions() {
               className=" border-[3px] border-[#ED1B24] rounded-lg p-6 bg-white shadow-sm h-72 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-2xl lg:text-5xl font-sh-ad-grotesk font-semibold mb-2 text-left">{job.title}</h3>
+                <h3 className="text-2xl leading-tight font-sh-ad-grotesk font-normal mb-2 text-left md:text-3xl lg:text-5xl">
+                  {job.title}
+                </h3>
                 <div className="flex items-center space-x-2 mb-8">
-                  <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">{job.location}</span>
-                  <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">{job.type}</span>
+                  {/* <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">{job.location}</span> */}
+                  <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">
+                    {job.type}
+                  </span>
                 </div>
               </div>
               <div>
-             <p className="inline-block text-[#929292] p-2 border border-gray-300 rounded-full">{job.salary}</p> 
-            </div>
+                <a
+                  href={job.applyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-[#929292] p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
+                >
+                  Apply Now
+                </a>
+              </div>
             </div>
           ))}
         </div>

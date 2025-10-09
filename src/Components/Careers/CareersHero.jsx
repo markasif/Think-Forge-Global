@@ -5,7 +5,7 @@ export default function CareersHero() {
   return (
     <div className="bg-black text-white pt-28">
       <div className="mb-2">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-sh-ad-grotesk max-w-5xl pl-4 md:pl-20 lg:pl-40 mb-4 p-2">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-sh-ad-grotesk max-w-5xl text-center p-2 px-4 mb-4 md:text-left md:pl-20 lg:pl-36">
           Here at Think Forge we believe the best ideas are forged together.
           Join the team and start forging
         </h1>
