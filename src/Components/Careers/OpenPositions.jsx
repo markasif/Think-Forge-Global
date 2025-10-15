@@ -1,53 +1,52 @@
 import React from "react";
 import InteractiveGridPattern from "../IntractiveGrid/IntractiveGrid";
 
-// const jobPositions = [
-//   { id: 1, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-//   { id: 2, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-//   { id: 3, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-//   { id: 4, title: 'Front End Developer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-//   { id: 5, title: 'Graphic Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-//   { id: 6, title: 'Senior Product Designer', location: 'Malappuram', type: 'Full Time', salary: '₹60,000-80,000/month' },
-// ];
 
 const jobPositions = [
   {
-    id: "sr-product-designer-01",
-    title: "Senior Product Designer",
-    type: "Remote",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
-  },
-  {
-    id: "fe-dev-01",
-    title: "Front End Developer",
-    type: "Full Time",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
-  },
-  {
-    id: "ux-researcher-01",
+    id: "graphic-designer-01",
     title: "Graphic Designer",
-    type: "Remote",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
-  },
-  {
-    id: "jr-graphic-designer-01",
-    title: "Junior Graphic Designer",
     type: "Full Time",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
   },
   {
-    id: "sr-backend-eng-01",
-    title: "Senior Backend Engineer",
+    id: "ui-ux-designer-01",
+    title: "UI/UX Designer",
     type: "Remote",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
   },
   {
-    id: "project-manager-01",
-    title: "Project Manager",
+    id: "digital-marketer-01",
+    title: "Digital Marketer",
     type: "Full Time",
-    applyLink: "https://docs.google.com/forms/d/e/your-form-id/viewform",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
+  },
+  {
+    id: "seo-specialist-01",
+    title: "SEO Specialist",
+    type: "Remote",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
+  },
+  {
+    id: "software-trainee-01",
+    title: "Software Trainee",
+    type: "Full Time",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
+  },
+  {
+    id: "software-developer-01",
+    title: "Software Developer",
+    type: "Full Time",
+    applyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
   },
 ];
+
 
 export default function OpenPositions() {
   return (

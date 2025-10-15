@@ -29,7 +29,7 @@ const teamMembers = [
   },
   {
     name: "Mohammed Shafas",
-    title: "Business And Operations Manager",
+    title: "Business And Ops",
     image: shafas,
     linkedin: "https://www.linkedin.com/in/mohammed-shafas/",
   },

@@ -11,7 +11,7 @@ export default function ConnectSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Hello, I am ${name} from ${company}. I would like to connect with you.`;
-    const whatsappUrl = `https://wa.me/917907165126?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919745004161?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
