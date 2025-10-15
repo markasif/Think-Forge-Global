@@ -64,10 +64,10 @@ export default function Footer() {
                 <span>Call Us</span>
               </h3>
               <a
-                href="tel:+917907165126"
+                href="tel:+919745004161"
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
-                +91 7907165126
+                +91 974 500 4161
               </a>
             </div>
 
