@@ -13,7 +13,7 @@ const jobPositions = [
   {
     id: "ui-ux-designer-01",
     title: "UI/UX Designer",
-    type: "Remote",
+    type: "Full Time",
     applyLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
   },
@@ -27,7 +27,7 @@ const jobPositions = [
   {
     id: "seo-specialist-01",
     title: "SEO Specialist",
-    type: "Remote",
+    type: "Full Time",
     applyLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdIrqaGEaJlbIVCACz8qg7HCAIQc-GuPaAWZRK9gGktuJegrg/viewform",
   },

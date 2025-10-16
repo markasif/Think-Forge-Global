@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Hamburger (Mobile) */}
         <div className="md:hidden flex items-center text-xs gap-2 z-30">
-           <HashLink smooth to="/#connect" onClick={toggleMenu}>
+           <HashLink smooth to= {isCareerPage ? "#career-connect" :"/#connect"}onClick={handleLinkClick} >
             <button className={`${buttonTheme} rounded py-1 px-2 text-xs`}>
               Contact Us
             </button>
