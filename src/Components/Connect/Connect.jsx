@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import hero from "../Assets/hero2.webp";
 import InteractiveGridPattern from "../IntractiveGrid/IntractiveGrid"; // Ensure path is correct
 
-export default function ConnectSection() {
+export default function ConnectSection({sectionId="connect"}) {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -16,7 +16,7 @@ export default function ConnectSection() {
   };
 
   return (
-    <section className="relative bg-black overflow-hidden px-4 py-16 font-cal-sans" id="connect">
+    <section className="relative bg-black overflow-hidden px-4 py-16 font-cal-sans" id={sectionId}>
       <div className="relative bg-white min-h-screen px-4 py-12 overflow-hidden rounded-xl" id="team">
         {/* Grid Backgrounds */}
         <InteractiveGridPattern

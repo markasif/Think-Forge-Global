@@ -14,7 +14,7 @@ export default function HomePage() {
       <About />
       <OurServices />
       <Team />
-      <ConnectSection />
+      <ConnectSection sectionId='connect' />
       <Footer />
     </>
   );
