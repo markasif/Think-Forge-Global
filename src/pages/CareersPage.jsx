@@ -8,7 +8,7 @@ export default function CareersPage() {
     <>
       <CareersHero />
       <OpenPositions/>
-      <ConnectSection  sectionId='career-connect'/>
+      <ConnectSection  variant='default'/>
  
     </>
   );

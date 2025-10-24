@@ -48,7 +48,7 @@ export default function BlogCard({content}){
             <BlogCardItem
             key={index}
             slug={post.slug}
-            imageUrl={post.cardImageUrl}
+            imageUrl={post.imageUrl}
             title={post.title}
             date={post.date}
             categories={post.categories}

@@ -8,6 +8,7 @@ import HomePage from './pages/HomePages';
 import CareersPage from './pages/CareersPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './Components/Blog/BlogPostPage';
+import ConnectPage from './pages/ConnectPage';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -32,6 +33,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage/>} />
+            <Route path="/connect" element={<ConnectPage/>}/>
             <Route path="/careers" element = {<CareersPage/>} />
             <Route path="/blog" element = {<BlogPage/>} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />

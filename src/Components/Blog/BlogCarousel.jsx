@@ -5,15 +5,14 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+
 
 
 export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
   return (
     <CarouselItem className="pl-4 basis-11/12 md:basis-4/5 lg:basis-3/4">
-        <Link to={`/blog/${slug}`}>
       <Card className="overflow-hidden bg-black text-white border-2 border-[#2A3234] rounded-2xl shadow-lg h-full">
-       <CardContent className="flex flex-col md:flex-row h-full p-0 md:h-[500px]">
+       <CardContent className="flex flex-col md:flex-row h-full p-0 lg:h-[450px]">
           <div className="relative w-full md:w-[65%] h-64 md:h-full flex-shrink-0">
             <img
               src={imageUrl}
@@ -41,7 +40,6 @@ export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
           </div>
         </CardContent>
       </Card>
-           </Link>
     </CarouselItem>
   );
 }
@@ -67,7 +65,7 @@ export default function BlogCarousel({posts}) {
             <BlogCarouselItem
               key={index}
               slug={post.slug}
-              imageUrl={post.cardImageUrl}
+              imageUrl={post.imageUrl}
               title={post.title}
               date={post.date}
               categories={post.categories}

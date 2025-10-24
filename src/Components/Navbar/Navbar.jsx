@@ -9,8 +9,6 @@ export default function Navbar() {
   const location = useLocation();
 
   const isHomePage = location.pathname === "/";
-  const isCareerPage = location.pathname === "/careers";
-  const isBlogPage = location.pathname === "/blog";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -32,13 +30,7 @@ export default function Navbar() {
     ? "bg-white bg-opacity-95"
     : "bg-black bg-opacity-95";
 
-  const contactLink = isHomePage
-    ? "/#connect"
-    : isCareerPage
-    ? "#career-connect"
-    : isBlogPage
-    ? "#blog-connect"
-    : "/#connect";
+
 
   return (
     <nav
@@ -53,11 +45,11 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center text-xs gap-2 z-30">
-          <HashLink smooth to={contactLink}>
+          <Link to="/connect">
             <button className={`${buttonTheme} rounded py-1 px-2 text-xs`}>
               Contact Us
             </button>
-          </HashLink>
+          </Link>
           <button
             onClick={toggleMenu}
             className="focus:outline-none transition"
@@ -103,13 +95,13 @@ export default function Navbar() {
             Blog
           </Link>
 
-            <HashLink smooth to={contactLink}>
+            <Link to="/connect">
               <button
                 className={`${buttonTheme} px-4 py-2 rounded hover:opacity-90 transition duration-300`}
               >
                 Contact Us
               </button>
-            </HashLink>
+            </Link>
         </div>
       </div>
 
