@@ -83,7 +83,7 @@ export default function ConnectSection({ variant = "default" }) {
           )}
         </div>
 
-        <p className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-white text-lg md:text-5xl font-semibold z-30">
+        <p className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-white text-lg md:text-3xl font-light z-30">
           Forging Smarter Growth <br />
           Through Technology
         </p>
