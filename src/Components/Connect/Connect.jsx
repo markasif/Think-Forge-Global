@@ -45,41 +45,65 @@ export default function ConnectSection({ variant = "default" }) {
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover object-center z-20 pointer-events-none"
         />
-       <div className="absolute top-[25%] left-1/2 z-30 transform -translate-x-1/2 -translate-y-1/2 text-center px-6 w-full max-w-xl space-y-10">
-          <h2 className="text-4xl font-bold sm:text-5xl md:text-6xl text-black leading-tight text-center">
-            <span className="text-red-500 text-4xl md:text-7xl">Connect</span><br/>
-            <span className="block sm:inline"> with us</span>
-          </h2>
-
+        <div className="absolute top-[25%] left-1/2 z-30 transform -translate-x-1/2 -translate-y-1/2 text-center px-6 w-full max-w-xl space-y-10">
           {variant === "default" ? (
-            <button
-              onClick={() => setShowForm(true)}
-              className="inline-block font-sfpro bg-black border border-white text-white font-bold 
+            <>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight">
+                <span className="text-red-500">Connect</span>{" "}
+                <br className="sm:hidden" /> with us
+              </h2>
+              <button
+                onClick={() => setShowForm(true)}
+                className="inline-block font-sfpro bg-black border border-white text-white font-bold 
                py-4 px-10 rounded-full text-xl shadow-md 
                hover:bg-white hover:text-black 
                transition-all duration-300
                sm:py-3 sm:px-8 sm:text-lg"
-            >
-              Send a message
-            </button>
+              >
+                Send a message
+              </button>
+            </>
           ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mt-6"
-            >
-              <input
-                type="text"
-                placeholder="Send a message"
-                value={messageText}
-                onChange={(e) => setMessageText(e.target.value)}
-                className="font-sfpro bg-black border border-white text-white placeholder-white font-semibold 
-                 py-3 px-6 text-base rounded-full shadow-md 
-                 transition-all duration-300
-                 w-full sm:w-[30%] md:w-[70%] lg:w-[90%]
-                 focus:outline-none focus:ring-2 focus:ring-white/50"
-                required
-              />
-            </form>
+            <div className="mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight text-center">
+                <span className="text-red-500 ">Connect</span>
+                <br />
+                <span className="block sm:inline"> with us</span>
+              </h2>
+
+              <form
+                onSubmit={handleSubmit}
+                className="relative w-full max-w-[720px] mx-auto mt-6"
+              >
+                <input
+                  type="text"
+                  placeholder="Send a message"
+                  value={messageText}
+                  onChange={(e) => setMessageText(e.target.value)}
+                  className="
+                      font-cal-sans bg-black border border-white text-white placeholder-white font-medium 
+                      py-3 px-6  rounded-full shadow-md w-full
+                      text-base sm:text-base md:text-md
+                      focus:outline-none focus:ring-2 focus:ring-white/50
+                      transition-all duration-300
+                    "
+                  required
+                />
+                <button
+                  type="submit"
+                  className="
+                    absolute right-1 top-1/2 -translate-y-1/2
+                        bg-red-500 hover:bg-white text-black font-bold
+                        py-2 px-6
+                        rounded-full
+                        text-sm sm:text-base md:text-md
+                        transition-all duration-300
+                    "
+                >
+                  Send
+                </button>
+              </form>
+            </div>
           )}
         </div>
 

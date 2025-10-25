@@ -10,7 +10,10 @@ export default function InputField({
   onChange, 
   placeholder, 
   className 
-}) {
+}) 
+
+
+{
 
 
   return (

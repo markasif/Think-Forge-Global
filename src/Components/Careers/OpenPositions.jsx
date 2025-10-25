@@ -57,14 +57,8 @@ export default function OpenPositions() {
         height={60}
         squares={[80, 80]}
       />
-      {/* <InteractiveGridPattern
-        className="absolute inset-0 text-gray-300 z-10 pointer-events-auto"
-        width={60}
-        height={60}
-        squares={[80, 80]}
-      /> */}
       <div className="relative z-10 max-w-7xl mx-auto">
-        <h2 className="text-center text-4xl sm:text-5xl font-bold font-sans mb-14">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl leading-tight font-cal-sans mb-14">
           <span className="text-red-500">Open</span> Positions
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,7 +72,6 @@ export default function OpenPositions() {
                   {job.title}
                 </h3>
                 <div className="flex items-center space-x-2 mb-8">
-                  {/* <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">{job.location}</span> */}
                   <span className="bg-[#929292] text-[#FFFFFF] text-xs font-medium font-sh-ad-grotesk px-2.5 py-0.5 rounded-lg">
                     {job.type}
                   </span>

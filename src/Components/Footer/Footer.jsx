@@ -6,7 +6,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import logo from "../Assets/footer.webp"; // Your logo image
+import logo from "../Assets/footer.webp";
 
 export default function Footer() {
   const socialLinks = [
@@ -22,57 +22,71 @@ export default function Footer() {
     },
   ];
 
+
   const footerLinks = [
+    { name: "Work", url: "#work" },
     { name: "About", url: "#about" },
     { name: "Services", url: "#services" },
-    { name: "Our Team", url: "#team" },
-    { name: "Connect", url: "#connect" },
+    { name: "Clients", url: "#clients" },
+    { name: "Contact", url: "#contact" }, 
   ];
 
   return (
-    <footer className="bg-white text-black border-t border-gray-200 px-6 py-12 md:px-12 font-sfpro">
+    <footer className="bg-white text-black border-t border-gray-200 px-6 py-12 md:px-12 font-sans">
       <div className="max-w-7xl mx-auto">
-        {/* Top Section: Address, Map, Contact Info, Logo */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-          {/* Address */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold flex items-center gap-2">
-              <FaMapMarkerAlt className="text-red-500" />
-              <span>Our Location</span>
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Second Floor, Ayisha Complex, Perinthalmanna, Kerala, India 679322
-            </p>
-          </div>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-3">
-                <FaEnvelope className="text-red-500" />
-                <span>Email Us</span>
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="py-4 pr-4 border-b border-gray-300 md:border-r">
+              <h3 className="font-bold text-base mb-3 flex items-center">
+                <FaMapMarkerAlt className="mr-2 text-red-500" />{" "}
+                Address
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Second Floor, Ayisha Complex, Perinthalmanna, Kerala, India
+                679322
+              </p>
+            </div>
+
+            <div className="py-4 md:pl-8 border-b border-gray-300">
+              <iframe
+                title="Google Map"
+                className="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.632228830118!2d76.2201979!3d10.990262200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cb0179a61e63%3A0x86ab8a604297184b!2sSahara%20shopping%20complex!5e0!3m2!1sen!2sin!4v1729860000000!5m2!1sen!2sin"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div className="py-4 pr-4 border-gray-300 md:border-r">
+              <h3 className="font-bold text-base mb-3 flex items-center">
+                <FaEnvelope className="mr-2 text-red-500" /> Email
               </h3>
               <a
                 href="mailto:mail@thinkforgeglobal.com"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 text-sm hover:text-red-500 transition-colors"
               >
                 mail@thinkforgeglobal.com
               </a>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-3">
-                <FaPhoneAlt className="text-red-500" />
-                <span>Call Us</span>
+            <div className="py-4 md:pl-8">
+              <h3 className="font-bold text-base mb-3 flex items-center">
+                {" "}
+                <FaPhoneAlt className="mr-2 text-red-500" /> Phone
               </h3>
               <a
                 href="tel:+919745004161"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 text-sm hover:text-red-500 transition-colors"
               >
                 +91 974 500 4161
               </a>
             </div>
+          </div>
 
-            {/* Social Icons moved below email/phone */}
-            <div className="flex gap-4 pt-2">
+          <div className="flex flex-col items-start md:items-end justify-between h-full">
+            <div className="flex gap-3 mb-8">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
@@ -85,51 +99,44 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Map */}
-          <div className="rounded-xl overflow-hidden border-gray-200">
-            <iframe
-              title="Google Map"
-              className="w-full h-full min-h-[200px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.80144487937253!2d76.21926463627273!3d10.976720148350356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd5a48d332c9%3A0x53c4e6fc539a98d!2sThink%20Forge%20Global%20LLP!5e0!3m2!1sen!2sin!4v1759155248199!5m2!1sen!2sin"
-            ></iframe>
-          </div>
-          {/* Contact Info + Social Icons */}
-
-          {/* Logo */}
-
-          <div className="flex justify-center md:justify-end items-center">
-            <a href="#hero">
+            <a href="#hero" className="mt-auto">
               <img
                 src={logo}
                 alt="Think Forge Global"
-                className="w-36 md:w-40 opacity-90 hover:opacity-100 transition-opacity"
+                className="w-48 md:w-56" 
               />
             </a>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-200 my-8"></div>
+        <div className="border-t border-gray-200"></div>
 
-        {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-6">
-          <div className="flex flex-wrap justify-center gap-6 mb-4 md:mb-0">
+        
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4 md:mb-0">
             {footerLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.url}
-                className="text-gray-600 hover:text-red-500 font-medium transition-colors text-sm uppercase tracking-wider"
+                className="text-xs font-medium text-gray-700 hover:text-black uppercase tracking-wider transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          <div className="text-gray-500 text-sm text-center md:text-right">
-            © {new Date().getFullYear()} Think Forge Global. All Rights
-            Reserved.
+
+          <div className="text-gray-500 text-xs text-center md:text-right">
+            <a href="#" className="hover:text-black transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="ml-4 hover:text-black transition-colors">
+              Sitemap
+            </a>
+            <span className="ml-4">
+              © {new Date().getFullYear()} Think Forge Global. All Rights
+              Reserved.
+            </span>
           </div>
         </div>
       </div>

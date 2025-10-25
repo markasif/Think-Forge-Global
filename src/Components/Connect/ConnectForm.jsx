@@ -23,7 +23,7 @@ export default function ContactForm() {
     e.preventDefault();
     const message = `Hello, my name is ${formData.name} from ${formData.company}.\n I'm inquiring about: ${formData.subject}.\n Here is my message: "${formData.message}".\n You can reach me at ${formData.email} or ${formData.phone}.\n Thank you.`;
 
-    const whatsappUrl = `https://wa.me/919567526150?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/919745004161?text=${encodeURIComponent(
       message.trim()
     )}`;
 
@@ -43,7 +43,7 @@ export default function ContactForm() {
               placeholder="Enter your name"
               value={formData.name}          
               onChange={handleChange}              
-              className="w-full bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+              className="w-full bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
             />
             <InputField
               label="Company Name"
@@ -52,8 +52,8 @@ export default function ContactForm() {
               placeholder="Enter your company"
               value={formData.company}       
               onChange={handleChange}         
-              className="w-full bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
-            />
+              className="w-full bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+              />
             <InputField
               label="Email ID"
               id="email"
@@ -62,7 +62,7 @@ export default function ContactForm() {
               placeholder="Enter your email"
               value={formData.email}          
               onChange={handleChange}              
-              className="w-full bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+              className="w-full bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
             />
             <InputField
               label="Phone Number"
@@ -72,7 +72,7 @@ export default function ContactForm() {
               placeholder="Enter your phone number"
               value={formData.phone}          
               onChange={handleChange}              
-              className="w-full bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+              className="w-full bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
             />
             <InputField
               label="Subject"
@@ -81,7 +81,7 @@ export default function ContactForm() {
               placeholder="Enter your subject"
               value={formData.subject}          
               onChange={handleChange}              
-              className="w-full bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+              className="w-full bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
             />
           </div>
 
@@ -99,7 +99,7 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Enter your valuable message"
-                className="w-full flex-grow min-h-[200px] md:min-h-0 bg-zinc-800 rounded-lg p-3 text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                className="w-full flex-grow min-h-[200px] bg-zinc-800 rounded-lg p-3 2xl:p-4 text-base 2xl:text-lg text-white placeholder-gray-500 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
                 required
               />
             </div>
