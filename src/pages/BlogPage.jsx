@@ -26,8 +26,12 @@ function BlogPage() {
   }, []);
 
 
-  if (loading) {
-    <Loader />
+   if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <Loader />
+      </div>
+    );
   }
 
   const carouselPosts = posts.slice(0, 3);

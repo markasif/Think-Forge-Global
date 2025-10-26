@@ -4,7 +4,7 @@ import React from "react";
 
 function ConnectPage() {
   return (
-    <div className=" bg-black pt-20 pb-20">
+    <div className=" bg-black pt-8 pb-20">
         <ConnectSection variant="primary" />
         <ContactForm />
     </div>

@@ -82,8 +82,8 @@ export default function ConnectSection({ variant = "default" }) {
                   onChange={(e) => setMessageText(e.target.value)}
                   className="
                       font-cal-sans bg-black border border-white text-white placeholder-white font-medium 
-                      py-3 px-6  rounded-full shadow-md w-full
-                      text-base sm:text-base md:text-md
+                      py-2 px-2 md:py-3 md:px-6  rounded-full shadow-md w-full
+                      text-xs sm:text-base md:text-md
                       focus:outline-none focus:ring-2 focus:ring-white/50
                       transition-all duration-300
                     "
@@ -94,9 +94,9 @@ export default function ConnectSection({ variant = "default" }) {
                   className="
                     absolute right-1 top-1/2 -translate-y-1/2
                         bg-red-500 hover:bg-white text-black font-bold
-                        py-2 px-6
+                        py-1.5 px-2 md:py-2 md:px-6
                         rounded-full
-                        text-sm sm:text-base md:text-md
+                        text-xs sm:text-base md:text-md
                         transition-all duration-300
                     "
                 >
