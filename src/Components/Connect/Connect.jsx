@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import hero from "../Assets/hero2.webp";
-import InteractiveGridPattern from "../IntractiveGrid/IntractiveGrid"; // Ensure path is correct
+import InteractiveGridPattern from "../IntractiveGrid/IntractiveGrid";
 
-export default function ConnectSection({sectionId="connect"}) {
+export default function ConnectSection({ variant = "default" }) {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
+  const [messageText, setMessageText] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const message = `Hello, I am ${name} from ${company}. I would like to connect with you.`;
-    const whatsappUrl = `https://wa.me/919745004161?text=${encodeURIComponent(message)}`;
+    const message =
+      variant === "default"
+        ? `Hello, I am ${name} from ${company}. I would like to connect with you.`
+        : messageText;
+    const whatsappUrl = `https://wa.me/919745004161?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <section className="relative bg-black overflow-hidden px-4 py-16 font-cal-sans" id={sectionId}>
-      <div className="relative bg-white min-h-screen px-4 py-12 overflow-hidden rounded-xl" id="team">
-        {/* Grid Backgrounds */}
+    <section className="relative bg-black overflow-hidden px-4 py-16 font-cal-sans">
+      <div
+        className="relative bg-white min-h-screen px-4 py-12 overflow-hidden rounded-xl"
+        id="team"
+      >
         <InteractiveGridPattern
           className="absolute inset-0 mask-[radial-gradient(400px_circle_at_center,white,transparent)] text-gray-100 z-10 pointer-events-auto"
           width={60}
@@ -32,36 +40,80 @@ export default function ConnectSection({sectionId="connect"}) {
           squares={[80, 80]}
         />
 
-        {/* Background Image */}
         <img
           src={hero}
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover object-center z-20 pointer-events-none"
         />
+        <div className="absolute top-[15%] md:top-[10%] left-1/2 z-30 transform -translate-x-1/2  text-center px-6 w-full max-w-xl space-y-10">
+          {variant === "default" ? (
+            <>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight">
+                <span className="text-red-500">Connect</span>{" "}
+                <br className="sm:hidden" /> with us
+              </h2>
+              <button
+                onClick={() => setShowForm(true)}
+                className="inline-block font-sfpro bg-black border border-white text-white font-bold 
+               py-4 px-10 rounded-full text-xl shadow-md 
+               hover:bg-white hover:text-black 
+               transition-all duration-300
+               sm:py-3 sm:px-8 sm:text-lg"
+              >
+                Send a message
+              </button>
+            </>
+          ) : (
+            <div className="mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight text-center">
+                <span className="text-red-500 ">Connect</span>
+                <br />
+                <span className="block sm:inline"> with us</span>
+              </h2>
 
-        {/* Main Content */}
-        <div className="absolute top-[30%] left-1/2 z-30 transform -translate-x-1/2 -translate-y-1/2 text-center px-6 w-full max-w-xl space-y-10">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight">
-            <span className="text-red-500">Connect</span> <br className="sm:hidden" /> with us
-          </h2>
-
-          <button
-            onClick={() => setShowForm(true)}
-            className="inline-block font-sfpro bg-black border border-white text-white font-bold py-4 px-10 rounded-full text-xl shadow-md hover:bg-white hover:text-black transition-all duration-300"
-          >
-            Send a message
-          </button>
+              <form
+                onSubmit={handleSubmit}
+                className="relative w-full max-w-[720px] mx-auto mt-6"
+              >
+                <input
+                  type="text"
+                  placeholder="Send a message"
+                  value={messageText}
+                  onChange={(e) => setMessageText(e.target.value)}
+                  className="
+                      font-cal-sans bg-black border border-white text-white placeholder-white font-medium 
+                      py-2 px-2 md:py-3 md:px-6  rounded-full shadow-md w-full
+                      text-xs sm:text-base md:text-md
+                      focus:outline-none focus:ring-2 focus:ring-white/50
+                      transition-all duration-300
+                    "
+                  required
+                />
+                <button
+                  type="submit"
+                  className="
+                    absolute right-1 top-1/2 -translate-y-1/2
+                        bg-red-500 hover:bg-white text-black font-bold
+                        py-1.5 px-2 md:py-2 md:px-6
+                        rounded-full
+                        text-xs sm:text-base md:text-md
+                        transition-all duration-300
+                    "
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          )}
         </div>
 
-        {/* Bottom Tagline */}
         <p className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-white text-lg md:text-3xl font-light z-30">
           Forging Smarter Growth <br />
           Through Technology
         </p>
       </div>
 
-      {/* Form Modal */}
-      {showForm && (
+      {variant === "default" && showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 font-sfpro">
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
             <button
