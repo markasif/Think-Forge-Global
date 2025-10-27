@@ -22,13 +22,12 @@ export default function Footer() {
     },
   ];
 
-
   const footerLinks = [
     { name: "Work", url: "#work" },
     { name: "About", url: "#about" },
     { name: "Services", url: "#services" },
     { name: "Clients", url: "#clients" },
-    { name: "Contact", url: "#contact" }, 
+    { name: "Contact", url: "#contact" },
   ];
 
   return (
@@ -38,12 +37,14 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="py-4 pr-4 border-b border-gray-300 md:border-r">
               <h3 className="font-bold text-base mb-3 flex items-center">
-                <FaMapMarkerAlt className="mr-2 text-red-500" />{" "}
-                Address
+                <FaMapMarkerAlt className="mr-2 text-red-500" /> Address
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Second Floor, Ayisha Complex, Perinthalmanna, Kerala, India
-                679322
+              <p className="text-gray-700 text-sm leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+                2nd Floor, Sahara Center Complex, Calicut Road,
+                <br />
+                Opp. Polytech Quarters, Pallippuram, Perinthalmanna,
+                <br />
+                Angadipuram, Kerala 679321
               </p>
             </div>
 
@@ -103,7 +104,7 @@ export default function Footer() {
               <img
                 src={logo}
                 alt="Think Forge Global"
-                className="w-48 md:w-56" 
+                className="w-48 md:w-56"
               />
             </a>
           </div>
@@ -112,7 +113,6 @@ export default function Footer() {
         <div className="border-t border-gray-200"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-6">
-        
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4 md:mb-0">
             {footerLinks.map((link, index) => (
               <a
@@ -124,7 +124,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-
 
           <div className="text-gray-500 text-xs text-center md:text-right">
             <a href="#" className="hover:text-black transition-colors">

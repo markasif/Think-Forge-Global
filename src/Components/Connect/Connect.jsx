@@ -45,7 +45,7 @@ export default function ConnectSection({ variant = "default" }) {
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover object-center z-20 pointer-events-none"
         />
-        <div className="absolute top-[25%] left-1/2 z-30 transform -translate-x-1/2 -translate-y-1/2 text-center px-6 w-full max-w-xl space-y-10">
+        <div className="absolute top-[15%] md:top-[10%] left-1/2 z-30 transform -translate-x-1/2  text-center px-6 w-full max-w-xl space-y-10">
           {variant === "default" ? (
             <>
               <h2 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight">
