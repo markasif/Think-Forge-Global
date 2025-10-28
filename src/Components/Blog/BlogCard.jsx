@@ -1,5 +1,5 @@
-import { Card,CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card,CardContent } from "@/Components/Ui/card";
+import { Badge } from "@/Components/Ui/badge";
 import { Link } from "react-router-dom";
 
 

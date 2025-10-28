@@ -1,5 +1,5 @@
 import React from 'react';
-import CareersHero from '../Components/Careers/CareersHero';
+import CareersHero from '../Components/Careers/careersHero';
 import OpenPositions from '../Components/Careers/OpenPositions';
 import ConnectSection from '../Components/Connect/Connect';
 
