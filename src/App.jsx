@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar/navbar';
-import Footer from './Components/Footer/footer';
-import Loader from './Components/Loader/loader';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Loader from './Components/Loader/Loader';
 import { Routes,Route } from 'react-router-dom';
 import HomePage from './pages/HomePages';
 import CareersPage from './pages/CareersPage';

@@ -1,8 +1,8 @@
 import React from 'react';
 import Hero from '../Components/Hero/Hero';
-import About from '../Components/About/about';
-import OurServices from '../Components/Service/service';
-import Team from '../Components/Team/team';
+import About from '../Components/About/About';
+import OurServices from '../Components/Service/Service';
+import Team from '../Components/Team/Team';
 import ConnectSection from '../Components/Connect/Connect';
 
 

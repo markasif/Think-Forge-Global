@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Badge } from "@/Components/Ui/badge";
+import { Badge } from "@/Components/ui/Badge";
 import { ArrowLeft } from 'lucide-react';
 import InteractiveGridPattern from '../IntractiveGrid/IntractiveGrid';
 import { fetchBlogBySlug } from '@/utils/blogService';

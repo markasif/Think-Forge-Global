@@ -2,9 +2,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/Components/Ui/carousel";
-import { Card, CardContent } from "@/Components/Ui/card";
-import { Badge } from "@/Components/Ui/badge";
+} from "@/Components/ui/Carousel";
+import { Card, CardContent } from "@/Components/ui/Card";
+import { Badge } from "@/Components/ui/Badge";
 
 
 
