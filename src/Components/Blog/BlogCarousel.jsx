@@ -4,7 +4,8 @@ import {
   CarouselItem,
 } from "@/Components/ui/Carousel";
 import { Card, CardContent } from "@/Components/ui/Card";
-import { Badge } from "@/Components/ui/Badge";
+import { Badge } from "../ui/Badge";
+
 
 
 
