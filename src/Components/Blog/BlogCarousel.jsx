@@ -1,19 +1,12 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/Components/ui/Carousel";
-import { Card, CardContent } from "@/Components/ui/Card";
 import { Badge } from "../ui/Badge";
+import { Card, CardContent } from "../ui/Card";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/Carousel";
 
-
-
-
-export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
+export function BlogCarouselItem({ slug, imageUrl, title, date, categories }) {
   return (
     <CarouselItem className="pl-4 basis-11/12 md:basis-4/5 lg:basis-3/4">
       <Card className="overflow-hidden bg-black text-white border-2 border-[#2A3234] rounded-2xl shadow-lg h-full">
-       <CardContent className="flex flex-col md:flex-row h-full p-0 lg:h-[450px]">
+        <CardContent className="flex flex-col md:flex-row h-full p-0 lg:h-[450px]">
           <div className="relative w-full md:w-[65%] h-64 md:h-full flex-shrink-0">
             <img
               src={imageUrl}
@@ -26,7 +19,11 @@ export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
             <div>
               <div className="flex gap-2 mb-4">
                 {categories.map((category, index) => (
-                  <Badge key={index} variant="secondary" className="bg-[#929292] text-white hover:bg-gray-600 border-none">
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="bg-[#929292] text-white hover:bg-gray-600 border-none"
+                  >
                     {category}
                   </Badge>
                 ))}
@@ -35,9 +32,7 @@ export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
                 {title}
               </h3>
             </div>
-            <p className="text-sm mt-4 text-gray-400">
-              {date}
-            </p>
+            <p className="text-sm mt-4 text-gray-400">{date}</p>
           </div>
         </CardContent>
       </Card>
@@ -45,13 +40,12 @@ export function BlogCarouselItem({ slug, imageUrl, title, date, categories}) {
   );
 }
 
-
-export default function BlogCarousel({posts}) {
-
+export default function BlogCarousel({ posts }) {
   return (
     <div className="w-full bg-black min-h-screen pt-24 pl-4 md:p-28">
       <h2 className="text-2xl md:text-3xl font-normal font-sh-ad-grotesk mb-8 p-2 text-white">
-        Hey We are <span className="text-red-500">Think Forge Global</span> and these are our thoughts and ideas
+        Hey We are <span className="text-red-500">Think Forge Global</span> and
+        these are our thoughts and ideas
       </h2>
 
       <Carousel

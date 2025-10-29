@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Badge } from "@/Components/ui/Badge";
 import { ArrowLeft } from 'lucide-react';
 import InteractiveGridPattern from '../IntractiveGrid/IntractiveGrid';
-import { fetchBlogBySlug } from '@/utils/blogService';
 import Loader from '../Loader/Loader';
+import { Badge } from '../ui/Badge';
+import { fetchBlogBySlug } from '@/utils/blogService';
 
 export default function BlogPostPage() {
   const { slug } = useParams();
